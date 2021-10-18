@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="src/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>Wheather App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card main-card" style="width: 36rem;">
+		<h5 class="card-header">🌤 Weather App</h5>
+		<nav class="navbar navbar-light bg-light">
+			<div class="container-fluid">
+			<form class="d-flex" id="search-form">
+					<input class="form-control" id="input-city" type="text" placeholder="Enter a city" aria-label="Search">
+					<span><button class="btn btn-outline-info" type="submit" id="searchButton">Search</button></span>	
+					<span><button type="button" class="btn btn-outline-success"id="current-location">Current</button></span>
+			</form>
+			</div>
+		</nav>
+      <div class="card-body">
+			<div class="row">
+			<div class="col-sm-4">
+				<h1 class="card-title" id="city"></h1>
+			</div>
+			<div class="col-sm-4">
+				<div class="d-flex flex-nowrap mr-2">
+					<h1>
+					<span class="main-temperature" id="main-temperature"></span>	
+					</h1>	
+					<a href="#" id="celsius-link">ºC</a>  |
+					<a href="#" id="fahrenheit-link">ºF</a>	
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<h1 class="weather-icon" id="day-weather-icon">☀️</h1>             
+			</div>  
+			<div class="row">
+				<div class="col-sm-4">
+				<h3 class="time" id="date"></h3>              
+				</div>
+				<div class="col-sm-4">
+				<h2 class="min-max-temp">
+					<span id="max-temp"> 
+					 </span> /
+					 <span id="min-temp"> </span>ºC	
+				</h2>            
+				</div>
+				<div class="col-sm-4">
+				<h2 class="day-wheather" id="main-weather"></h2>              
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-3">
+					<div class="card">
+						<div class="card-body">
+							<h1>🌤</h1>
+							<h3>27º</h3>
+							<p>Morning</p>
+							<h6>💧 4%</h6>
+						</div>
+					</div>
+				</div>
+					<div class="col-3">
+					<div class="card">
+						<div class="card-body">
+							<h1>🌤</h1>
+							<h3>27º</h3>
+							<p>Afternoon</p>
+							<h6>💧 4%</h6>
+						</div>
+					</div>
+				</div>
+					<div class="col-3">
+					<div class="card">
+						<div class="card-body">
+							<h1>🌤</h1>
+							<h3>27º</h3>
+							<p>Evening</p>
+							<h6>💧 4%</h6>
+						</div>
+					</div>
+				</div>
+					<div class="col-3">
+					<div class="card">
+						<div class="card-body">
+							<h1>🌤</h1>
+							<h3>27º</h3>
+							<p>Overnight</p>
+							<h6>💧 4%</h6>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<br/>
+			<div class="row">
+				<div class="col-2">
+					<button href="#" class="btn btn-primary today-button">Today</button>
+				</div>
+				<div class="col-5">
+					<button href="#" class="btn btn-primary next-days-button">Next four days</button>
+				</div>	
+			</div>
+		</div>	
+    </div>    
+  </div>
+  <script src="src/index.js"></script>     
+</body>
+</html>
