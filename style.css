@@ -1,5 +1,5 @@
-background-color {
-  color: #eaf6f6;
+body {
+  background-color: #eaf6f6;
 }
 h1 {
   color: #113f67;
@@ -9,6 +9,14 @@ h3 {
 }
 h6 {
   color: #38598b;
+}
+header {
+  background: url("https://www.pexels.com/es-es/foto/cielo-nubes-azul-modelo-4502111/")
+    no-repeat center;
+  height: 150px;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0px;
 }
 p {
   font-size: 83%;
