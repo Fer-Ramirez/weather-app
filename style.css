@@ -1,0 +1,48 @@
+background-color {
+  color: #eaf6f6;
+}
+h1 {
+  color: #113f67;
+}
+h3 {
+  color: #113f67;
+}
+h6 {
+  color: #38598b;
+}
+p {
+  font-size: 83%;
+  color: #a2a8d3;
+}
+.card-header {
+  color: #38598b;
+}
+.day-wheather {
+  color: #38598b;
+}
+.main-card {
+  top: 50px;
+}
+.main-temp {
+  font-size: smaller;
+  padding: 0%;
+}
+.min-max-temp {
+  color: #38598b;
+}
+.next-days-button {
+  margin-top: 20px;
+}
+.rain {
+  color: #a2a8d3;
+}
+.time {
+  color: #38598b;
+  font-size: 145%;
+}
+.today-button {
+  margin-top: 20px;
+}
+.weather-icon {
+  font-size: 300%;
+}
